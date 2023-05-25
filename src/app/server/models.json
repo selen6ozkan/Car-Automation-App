@@ -1,0 +1,214 @@
+{
+    "models": [
+        {
+            "id": 1,
+            "brandId": 7,
+            "name": "Mustang"
+        },
+        {
+            "id": 2,
+            "brandId": 7,
+            "name": "Focus"
+        },
+        {
+            "id": 3,
+            "brandId": 7,
+            "name": "Escape"
+        },
+        {
+            "id": 4,
+            "brandId": 8,
+            "name": "Camaro"
+        },
+        {
+            "id": 5,
+            "brandId": 8,
+            "name": "Silverado"
+        },
+        {
+            "id": 6,
+            "brandId": 8,
+            "name": "Equinox"
+        },
+        {
+            "id": 7,
+            "brandId": 9,
+            "name": "Altima"
+        },
+        {
+            "id": 8,
+            "brandId": 9,
+            "name": "Maxima"
+        },
+        {
+            "id": 9,
+            "brandId": 9,
+            "name": "Rogue"
+        },
+        {
+            "id": 10,
+            "brandId": 10,
+            "name": "Elantra"
+        },
+        {
+            "id": 11,
+            "brandId": 10,
+            "name": "Sonata"
+        },
+        {
+            "id": 12,
+            "brandId": 10,
+            "name": "Tucson"
+        },
+        {
+            "id": 13,
+            "brandId": 11,
+            "name": "Optima"
+        },
+        {
+            "id": 14,
+            "brandId": 11,
+            "name": "Sorento"
+        },
+        {
+            "id": 15,
+            "brandId": 11,
+            "name": "Sportage"
+        },
+        {
+            "id": 16,
+            "brandId": 12,
+            "name": "Impreza"
+        },
+        {
+            "id": 17,
+            "brandId": 12,
+            "name": "Forester"
+        },
+        {
+            "id": 18,
+            "brandId": 12,
+            "name": "Outback"
+        },
+        {
+            "id": 19,
+            "brandId": 13,
+            "name": "500"
+        },
+        {
+            "id": 20,
+            "brandId": 13,
+            "name": "Panda"
+        },
+        {
+            "id": 21,
+            "brandId": 13,
+            "name": "Tipo"
+        },
+        {
+            "id": 22,
+            "brandId": 14,
+            "name": "208"
+        },
+        {
+            "id": 23,
+            "brandId": 14,
+            "name": "308"
+        },
+        {
+            "id": 24,
+            "brandId": 14,
+            "name": "3008"
+        },
+        {
+            "id": 25,
+            "brandId": 15,
+            "name": "XC60"
+        },
+        {
+            "id": 26,
+            "brandId": 15,
+            "name": "XC90"
+        },
+        {
+            "id": 28,
+            "brandId": 15,
+            "name": "S60"
+        },
+        {
+            "id": 29,
+            "brandId": 16,
+            "name": "Range Rover Evoque"
+        },
+        {
+            "id": 30,
+            "brandId": 16,
+            "name": "Discovery"
+        },
+        {
+            "id": 31,
+            "brandId": 16,
+            "name": "Defender"
+        },
+        {
+            "id": 32,
+            "brandId": 17,
+            "name": "XF"
+        },
+        {
+            "id": 33,
+            "brandId": 17,
+            "name": "F-Type"
+        },
+        {
+            "id": 34,
+            "brandId": 17,
+            "name": "XJ"
+        },
+        {
+            "id": 35,
+            "brandId": 18,
+            "name": "Model S"
+        },
+        {
+            "id": 36,
+            "brandId": 18,
+            "name": "Model 3"
+        },
+        {
+            "id": 37,
+            "brandId": 18,
+            "name": "Model X"
+        },
+        {
+            "id": 38,
+            "brandId": 19,
+            "name": "911"
+        },
+        {
+            "id": 39,
+            "brandId": 19,
+            "name": "Cayenne"
+        },
+        {
+            "id": 40,
+            "brandId": 19,
+            "name": "Macan"
+        },
+        {
+            "id": 41,
+            "brandId": 20,
+            "name": "Cooper"
+        },
+        {
+            "id": 42,
+            "brandId": 20,
+            "name": "Countryman"
+        },
+        {
+            "id": 43,
+            "brandId": 20,
+            "name": "Clubman"
+        }
+    ]
+}

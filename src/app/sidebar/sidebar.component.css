@@ -1,0 +1,19 @@
+.p-sidebar {
+    width: 250px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+  
+  li:hover {
+    background-color: #e0e0e0;
+  }
+  

@@ -1,0 +1,23 @@
+<nav class="navbar">
+    <div class="left-section">
+      <button class="hamburger" (click)="toggleSidebar()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    
+    <div class="center-section">
+      <ul class="menu">
+        <li *ngFor="let item of menuItems">
+          <a [routerLink]="item.routerLink" routerLinkActive="active">
+            <i [class]="item.icon"></i>
+            {{ item.label }}
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="right-section">
+      <button class="profile-button">Profil</button>
+    </div>
+  </nav>
+  

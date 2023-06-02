@@ -1,0 +1,13 @@
+.mat-toolbar-row {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  margin-right: 0.5rem;
+}
+
+h4 {
+  margin: 0;
+  font-weight: bolder;
+}

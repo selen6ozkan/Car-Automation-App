@@ -8,15 +8,16 @@ import { Type } from '../model/type.model';
 
 @Injectable()
 export class DataService {
-  private baseUrl = "http://localhost:3000";
-  private brandsApi = `${this.baseUrl}/brands`;
-  private modelsApi = `${this.baseUrl}/models`;
-  private typesApi = `${this.baseUrl}/types`;
+  private brandsApi = `assets/fake-backend/brands.json`;
+  private modelsApi = `assets/fake-backend/models.json`;
+  private typesApi = `assets/fake-backend/types.json`;
+  private cardsApi = `assets/fake-backend/cards.json`;
+
 
   constructor(private http: HttpClient) {}
 
-  getBrands(): Observable<Brand[]> {
-    return this.http.get<Brand[]>(this.brandsApi);
+  getBrands(): Observable<Brand> {
+    return this.http.get<Brand>(this.brandsApi);
   }
 
   getModels(): Observable<Model[]> {
@@ -26,4 +27,8 @@ export class DataService {
   getTypes(): Observable<Type[]> {
     return this.http.get<Type[]>(this.typesApi);
   }
+  getCards(): Observable<any[]> {
+    return this.http.get<any[]>(this.cardsApi);
+  }
+
 }

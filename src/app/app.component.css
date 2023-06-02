@@ -1,0 +1,30 @@
+.app-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  flex: 1;
+}
+
+.sidebar-closed .main {
+  width: 100%;
+}
+
+.p-card {
+  flex-basis: 20%; /* Beş kartı eşit genişlikte yerleştirmek için %20 genişlik */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .p-card {
+    flex-basis: 50%; /* Ekrana sığmadığında iki kartı üst üste yerleştir */
+  }
+}
+
+@media (max-width: 480px) {
+  .p-card {
+    flex-basis: 100%; /* Ekrana sığmadığında kartları tam genişlikte yerleştir */
+  }
+}

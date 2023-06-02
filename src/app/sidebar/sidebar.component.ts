@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,9 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
-  sidebarOpen = false;
-
+  @Input() opened = false;
+  
   toggleSidebar() {
-    this.sidebarOpen = !this.sidebarOpen;
+    this.opened = !this.opened;
+  }
+  constructor(private router: Router) {}
+
+  isActive(route: string): boolean {
+      // "/" rotası (Home) için özel durumu kontrol ediyoruz
+  if (route === '/home' && this.router.url === '/home') {
+    return true;
+  }
+    return this.router.url === route;
+  }
+
+
+  logout() {
+    // Çıkış yapma işlemlerini burada gerçekleştirin
   }
 }

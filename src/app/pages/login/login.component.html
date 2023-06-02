@@ -1,0 +1,18 @@
+<div class="app-container">
+  <div class="card-container">
+    <p-card header="Welcome" [style]="{ width: '400px' }" class="p-card">
+      <form class="card-form" (ngSubmit)="login()">
+        <div class="p-field">
+          <label for="username">Username:</label>
+          <input type="text" id="username" pInputText placeholder="Enter your username" [(ngModel)]="username" name="username" required>
+        </div>
+        <div class="p-field">
+          <label for="password">Password:</label>
+          <input type="password" id="password" pPassword placeholder="Enter your password" [(ngModel)]="password" name="password" required>
+        </div>
+        <button type="submit" pButton label="Login" class="p-button-success"></button>
+        <button type="button" pButton label="Sign Up" class="p-button-primary" (click)="navigateToSignUp()"></button>
+      </form>
+    </p-card>
+  </div>
+</div>

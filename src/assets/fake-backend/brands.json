@@ -1,0 +1,104 @@
+{
+  "brands": [
+    {
+      "id": 1,
+      "name": "BMW",
+      "image": "bmw.png"
+    },
+    {
+      "id": 2,
+      "name": "Mercedes-Benz",
+      "image": "mercedes.png"
+    },
+    {
+      "id": 3,
+      "name": "Audi",
+      "image": "audi.png"
+    },
+    {
+      "id": 4,
+      "name": "Toyota",
+      "image": "toyota.png"
+    },
+    {
+      "id": 5,
+      "name": "Honda",
+      "image": "honda.png"
+    },
+    {
+      "id": 6,
+      "name": "Volkswagen",
+      "image": "volkswagen.png"
+    },
+    {
+      "id": 7,
+      "name": "Ford",
+      "image": "ford.png"
+    },
+    {
+      "id": 8,
+      "name": "Chevrolet",
+      "image": "chevrolet.png"
+    },
+    {
+      "id": 9,
+      "name": "Nissan",
+      "image": "nissan.png"
+    },
+    {
+      "id": 10,
+      "name": "Hyundai",
+      "image": "hyundai.png"
+    },
+    {
+      "id": 11,
+      "name": "Kia",
+      "image": "kia.png"
+    },
+    {
+      "id": 12,
+      "name": "Subaru",
+      "image": "subaru.png"
+    },
+    {
+      "id": 13,
+      "name": "Fiat",
+      "image": "fiat.png"
+    },
+    {
+      "id": 14,
+      "name": "Peugeot",
+      "image": "peugeot.png"
+    },
+    {
+      "id": 15,
+      "name": "Volvo",
+      "image": "volvo.png"
+    },
+    {
+      "id": 16,
+      "name": "Land Rover",
+      "image": "landrover.png"
+    },
+    {
+      "id": 17,
+      "name": "Jaguar",
+      "image": "jaguar.png"
+    },
+    {
+      "id": 18,
+      "name": "Tesla",
+      "image": "tesla.png"
+    },
+    {
+      "id": 19,
+      "name": "Porsche",
+      "image": "porsche.png"
+    },
+    {
+      "id": 20,
+      "name": "Mini",
+      "image": "mini.png"
+    }
+  ]
+}

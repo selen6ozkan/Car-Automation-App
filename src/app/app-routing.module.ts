@@ -1,18 +1,27 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, RouterOutlet, Routes } from '@angular/router';
+import { HomeComponent } from './pages/home/home.component';
+import { BrandListComponent } from './pages/brand-list/brand-list.component';
+import { ModelListComponent } from './pages/model-list/model-list.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { AppComponent } from './app.component';
 
-const routes: Routes = [];
+const routes: Routes = [  
+  {path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'brand', component: BrandListComponent },
+  { path: 'model', component: ModelListComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+
+ 
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-  // const routes: Routes = [
-  //   { path: '', redirectTo: '/anasayfa', pathMatch: 'full' },
-  //   { path: 'anasayfa', component: AnasayfaComponent },
-  //   { path: 'urunler', component: UrunlerComponent },
-  //   { path: 'hakkimizda', component: HakkimizdaComponent },
-  //   { path: 'iletisim', component: IletisimComponent }
-  // ];
+
  }

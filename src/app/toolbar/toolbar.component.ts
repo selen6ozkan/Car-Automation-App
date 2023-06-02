@@ -1,21 +1,17 @@
-import { Component } from '@angular/core';
+import { Component,EventEmitter, Output} from '@angular/core';
+import { SidebarComponent } from '../sidebar/sidebar.component';
 
 
 
 @Component({
   selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  templateUrl: './toolbar.component.html',
+  styleUrls: ['./toolbar.component.css']
 })
 export class HeaderComponent {
-  sidebarOpen = false;
+  @Output() toggleSidebar = new EventEmitter<void>();
 
-  toggleSidebar() {
-    this.sidebarOpen = !this.sidebarOpen;
-  }
-
-
-
+ 
   menuItems = [
     { label: 'Anasayfa', icon: 'pi pi-home', routerLink: '/anasayfa' },
     { label: 'Ürünler', icon: 'pi pi-list', routerLink: '/urunler' },

@@ -1,0 +1,18 @@
+<p>model-list works!</p>
+
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Marka Adı</th>
+        <th>Modeller</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-brand>
+      <tr>
+        <td>{{ brand.brandName }}</td>
+        <td>
+          <ul>
+            <li *ngFor="let model of brand.models">{{ model }}</li>
+          </ul>
+        </td>
+      </tr>
+    </ng-template>

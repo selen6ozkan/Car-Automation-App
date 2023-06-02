@@ -1,0 +1,25 @@
+.p-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .p-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .p-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .p-card p {
+    margin-top: 10px;
+  }
+  
+  .p-card button {
+    margin-top: 20px;
+  }
+  

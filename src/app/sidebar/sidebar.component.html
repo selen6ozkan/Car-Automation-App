@@ -1,8 +1,30 @@
-
-<p-sidebar [(visible)]="sidebarOpen">
-    <ul>
-      <li>Menu Item 1</li>
-      <li>Menu Item 2</li>
-      <li>Menu Item 3</li>
-    </ul>
-  </p-sidebar>
+<mat-sidenav-container>
+    <mat-sidenav [(opened)]="opened" mode="side" class="sidebar">
+      <ul class="sidenav-nav">
+        <li class="sidenav-nav-item">
+          <a class="sidenav-nav-link" routerLink="/home" [class.active]="isActive('/home')">
+            <i class="pi pi-home"></i> Home
+          </a>
+        </li>
+        <li class="sidenav-nav-item">
+          <a class="sidenav-nav-link" routerLink="/brand" [class.active]="isActive('/brand')">
+            <i class="pi pi-tags"></i> Brand
+          </a>
+        </li>
+        <li class="sidenav-nav-item">
+          <a class="sidenav-nav-link" routerLink="/model" [class.active]="isActive('/model')">
+            <i class="pi pi-car"></i> Model
+          </a>
+        </li>
+        <li class="sidenav-nav-item">
+          <a class="sidenav-nav-link" routerLink="/contact" [class.active]="isActive('/contact')">
+            <i class="pi pi-envelope"></i> Contact
+          </a>
+        </li>
+      </ul>
+      <div class="footer">
+        <button class="exit-button" (click)="logout()">Çıkış Yap</button>
+      </div>
+    </mat-sidenav>
+  </mat-sidenav-container>
+  

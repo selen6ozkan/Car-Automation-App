@@ -1,0 +1,34 @@
+{
+    "cards":[
+        {
+            "id": 1,
+            "brandId": 1,
+            "name": "Kart 1"
+          },
+          {
+            "id": 2,
+            "brandId": 2,
+            "name": "Kart 2"
+          },
+          {
+            "id": 3,
+            "brandId": 3,
+            "name": "Kart 3"
+          },
+          {
+            "id": 4,
+            "brandId": 4,
+            "name": "Kart 4"
+          },
+          {
+            "id": 5,
+            "brandId": 5,
+            "name": "Kart 5"
+          },
+          {
+            "id": 6,
+            "brandId": 6,
+            "name": "Kart 6"
+          }
+    ]
+}

@@ -7,6 +7,9 @@
 body {
     margin: 0 10px;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    height: 100vh; /* Sayfa yüksekliğini görüntüleme alanının tamamı olarak ayarlar */
+    overflow: hidden; /* Kaydırmayı devre dışı bırakır */
+      
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

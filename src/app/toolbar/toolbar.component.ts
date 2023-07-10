@@ -11,7 +11,6 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
 export class HeaderComponent {
   @Output() toggleSidebar = new EventEmitter<void>();
 
- 
   menuItems = [
     { label: 'Anasayfa', icon: 'pi pi-home', routerLink: '/anasayfa' },
     { label: 'Ürünler', icon: 'pi pi-list', routerLink: '/urunler' },

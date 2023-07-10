@@ -1,0 +1,48 @@
+body {
+    overflow: hidden;
+  }
+  .mat-table-container {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+  
+  }
+  
+  
+  .matTable{
+    display: inline-table;
+    overflow: hidden;
+  }
+  .siralama-header{
+    display: flex;
+    align-items: center;
+  }
+  .header-icon{
+    margin-right: 5px;
+  }
+  .katilim-button {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: bold;
+      width: 80px; 
+      height: 40px; 
+      text-align: center;
+      display: flex;
+      align-items: center;
+      border: none;
+  }
+  .katilim-button:focus {
+    outline: none;
+  }
+    
+  .evet {
+    background-color: green;
+  }
+    
+  .hayir {
+    background-color: red;
+  }
+    

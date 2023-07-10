@@ -1,5 +1,5 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { Brand, BrandItem } from 'src/app/model/brand.model';
 import { Model } from 'src/app/model/model.model';
 import { Type } from 'src/app/model/type.model';
@@ -21,13 +21,32 @@ export class HomeComponent implements OnInit {
   types: Type[] = [];
   items: Items[]=[];
 
+  cardList: any[] = []; // Kart verilerini tutacak dizi
+  currentPage: number = 1; // Şu anki sayfa numarası
+  cardsPerPage: number = 5; // Sayfa başına kart sayısı
+  totalPages: number = 0; // Toplam sayfa sayısı
+
+
 
   constructor(private dataService: DataService,private router: Router) {}
+  
+  onPageChange(event: any) {
+    const pageNumber = parseInt(event.target.value, 10);
+    this.currentPage = pageNumber;
+  }
+  
+
+  getPaginatedCards(): any[] {
+    const startIndex = (this.currentPage - 1) * this.cardsPerPage;
+    const endIndex = startIndex + this.cardsPerPage;
+    return this.cardList.slice(startIndex, endIndex);
+  }
+
+  
 
   ngOnInit(): void {
     this.getBrands();
-    this.getModels();
-    this.getTypes();
+ 
    
   }
  
@@ -35,6 +54,7 @@ export class HomeComponent implements OnInit {
   getBrands() {
     this.dataService.getBrands().subscribe((data: Brand) => {
       this.brands = data.brands;
+      console.log(this.brands); 
     });
   }
 
@@ -60,4 +80,5 @@ export class HomeComponent implements OnInit {
     console.log('Login Success');
     this.router.navigate(['/home']);
   }
+ 
 }

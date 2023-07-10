@@ -10,10 +10,15 @@ import { Router } from '@angular/router';
 export class AppComponent{
   title = 'car-automation-app';
   sidebarOpened: boolean = false;
-
   showMain: boolean = false;
 
   constructor(private router: Router) {}
+
+  ngOnInit(){
+    if(localStorage.getItem("token")) this.router.navigateByUrl('/home');
+    else this.router.navigateByUrl('/login');
+  }
+
   showMainPage() {
     this.showMain = true;
     this.router.navigate(['/home']);

@@ -1,0 +1,19 @@
+
+<div class="p-grid" >
+    <div class="p-col" *ngFor="let brand of brands" >
+       <div class="card">
+        <ng-container *ngIf="brand.img">
+          <img [src]="'assets/images/' + brand.img" alt="Brand Image" />
+        </ng-container>
+        <ng-container *ngIf="!brand.img">
+          <img src="https://primefaces.org/cdn/primeng/images/usercard.png" alt="Default Image" />
+        </ng-container>
+        <h3>{{ brand.name }}</h3>
+        <button class="detail-button" (click)="showDetails(brand)">
+          <i class="fa fa-info-circle"></i> Detay
+        </button>
+        </div>
+    </div>
+  </div> 
+  
+

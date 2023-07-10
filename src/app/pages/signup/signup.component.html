@@ -1,12 +1,22 @@
-<p>signup works!</p>
-<form (ngSubmit)="signup()">
-  <div class="form-group">
-    <label for="username">Username:</label>
-    <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" placeholder="Enter your username" required>
+<div class="app-container">
+  <div class="card-container">
+    <p-card header="Not a member yet?" [style]="{ width: '400px' }" class="p-card">
+      <form  class="card-form" (ngSubmit)="signUp()">
+        <div class="p-field">
+          <label for="username">Username:</label>
+          <input type="text"  id="username" pInputText placeholder="Enter your username" [(ngModel)]="username" name="username" required>
+        </div>
+        <div class="p-field">
+          <label for="password">Password:</label>
+          <input type="password"  id="password" [(ngModel)]="password" name="password"
+            placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit" pButton label="Sign Up" class="p-button-success"   [disabled]="isRegistered"></button>
+        <!-- <p *ngIf="isRegistered">User already registered.</p> -->
+        <button type="button" pButton label="Login" class="p-button-primary" (click)="navigateToLogin()"></button>
+
+      </form>
+    </p-card>
   </div>
-  <div class="form-group">
-    <label for="password">Password:</label>
-    <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" placeholder="Enter your password" required>
-  </div>
-  <button type="submit" class="btn btn-primary">Sign Up</button>
-</form>
+</div>

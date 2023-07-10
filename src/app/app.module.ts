@@ -31,6 +31,9 @@ import { UserService } from './services/user.service';
 import { MessageService } from 'primeng/api';
 import {TableModule} from 'primeng/table';
 import { HomeComponent } from './pages/home/home.component';
+import { CardComponent } from './card/card.component';
+import { ContactComponent } from './pages/contact/contact.component';
+
 
 
 
@@ -45,7 +48,9 @@ import { HomeComponent } from './pages/home/home.component';
     BrandListComponent,
     SignupComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    CardComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

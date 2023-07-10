@@ -21,6 +21,13 @@
             <i class="pi pi-envelope"></i> Contact
           </a>
         </li>
+
+        <li class="sidenav-nav-item" *ngIf="authService.isAdmin">
+          <a class="sidenav-nav-link" routerLink="/users" [class.active]="isActive('/users')">
+            <i class="pi pi-envelope"></i> Users
+          </a>
+        </li>
+        
       </ul>
       <div class="footer">
         <button class="exit-button" (click)="logout()">Çıkış Yap</button>

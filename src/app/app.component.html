@@ -2,8 +2,8 @@
   
 <div class="app-container">
 
-  <app-login (loginSuccess)="showMainPage()"></app-login>
-  <div class="main" *ngIf="showMain">
+  <!-- <app-login (loginSuccess)="showMainPage()"></app-login> -->
+  <div class="main">
     <app-header (toggleSidebar)="toggleSidebar()"></app-header>
     <div class="app-content">
       <div class="sidebar" [ngClass]="{ 'sidebar-closed': !sidebarOpened }">
